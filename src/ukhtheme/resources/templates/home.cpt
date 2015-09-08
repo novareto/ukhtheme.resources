@@ -1,0 +1,133 @@
+<div id="landingpage">
+      <h1>Willkommen im Mitgliederportal der Unfallkasse Hessen</h1>
+      <p>In unserem Portal stehen Ihnen verschiedene Services für den Datenaustausch mit der 
+      Unfallkasse Hessen zur Verfügung.</p>
+      <h3>Bitte wählen Sie einen Bereich aus:</h3>
+  <div class="row">
+   <div class="col-md-4">
+      <a href="https://mitgliederportal.ukh.de/members/99999/Beitragsbescheide/beitragsbescheid">
+              <img src="fanstatic/ukhtheme.resources/images/beitragsbescheid.png" />
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://mitgliederportal.ukh.de/members/99999/Unfallgeschehen-meldung-betriebsfremder-mitarbeiter/unfallgeschehenmenu">
+        <img src="fanstatic/ukhtheme.resources/images/ihreunfaelle.png" />
+      </a>
+   </div>
+   <div class="col-md-4 hidden-xs">
+      <div class="portlet">
+        <div class="portlet-header"></div>
+        <h1>News der UKH</h1>
+        <div class="portlet-body">
+          <a  class="portletlink"
+	      href="http://www.ukh.de/informationen/inform-das-magazin/">
+            <img src="fanstatic/ukhtheme.resources/images/magazininform.png"
+		 title="inform" />
+	  </a>
+          <a class="portletlink"
+	     href="http://www.ukh.de/informationen/sibe-reportarchiv/">
+            <img src="fanstatic/ukhtheme.resources/images/sibe-report.png"
+		 title="SiBe-Report" />
+	  </a>
+          <a class="portletlink"
+	     href="http://www.ukh.de/presse/pressemitteilungen/">
+            <img src="/fanstatic/ukhtheme.resources/images/pressemeldungen.png"
+		 title="Pressemeldungen" />
+	  </a>
+          <a class="portletlink" href="http://www.kitaportal-hessen.de">
+            <img src="fanstatic/ukhtheme.resources/images/kitaportal.png" title="Kitaportal" />
+	  </a>
+        </div>
+        <div class="portlet-footer"></div>
+      </div>
+   </div>
+ </div>
+</div>
+
+<!--
+<table id="startseite-table-noborder">
+  <tr>
+    <td colspan="2">
+      <h1>Willkommen im Mitgliederportal der Unfallkasse Hessen</h1>
+      <p>In unserem Portal stehen Ihnen verschiedene Services für den Datenaustausch mit der 
+      Unfallkasse Hessen zur Verfügung.</p>
+      <h3>Bitte wählen Sie einen Bereich aus:</h3>
+    </td>
+    <td rowspan="6" id="portlets" style="vertical-align:top">
+      <div class="portlet">
+        <div class="portlet-header"></div>
+        <h1>Immer aktuell...</h1>
+        <div class="portlet-body">
+          <p>Abonnieren Sie unseren monatlichen Newsletter</p>
+          <a class="portletlink"
+	     href="http://www.ukh.de/informationen/newsletter-abonnieren/">
+            <img src="fanstatic/ukhtheme.resources/images/newsletter_abo.png"
+		 title="Newsletter-Abo" />
+          </a>
+        </div>
+        <div class="portlet-footer"></div>
+      </div>
+      <div class="portlet">
+        <div class="portlet-header"></div>
+        <h1>Downloads</h1>
+        <div class="portlet-body">
+          <ul>
+            <li><a class="portletlink" href="http://www.ukh.de/downloads/anmeldung-haushaltshilfe/">Anmeldung Haushaltshilfe</a></li>
+            <li><a class="portletlink" href="http://www.ukh.de/downloads/taxi-gutscheine-fuer-schulen/">Taxi-Gutscheine für Schulen</a></li>
+            <li><a class="portletlink" href="http://www.ukh.de/downloads/erste-hilfe-verfahren/">Erste-Hilfe-Verfahren</a></li>
+            <li><a href="https://mitgliederportal.ukh.de/auftragehrenamt">Muster Auftrag Ehrenamt</a>
+            </li>
+          </ul>
+        </div>
+        <div class="portlet-footer"></div>
+      </div>
+      <div class="portlet">
+        <div class="portlet-header"></div>
+        <h1>Informationen</h1>
+        <div class="portlet-body">
+          <ul>
+            <li><a class="portletlink" href="http://www.dguv.de/landesverbaende/de/datenbanken/index.jsp">Durchgangsärzte (DGUV)</a></li>
+          </ul>
+        </div>
+        <div class="portlet-footer"></div>
+      </div>
+    </td>
+  </tr> 
+  <tr>
+    <td width="250" style="vertical-align: top;">
+      <a href="https://mitgliederportal.ukh.de/members/99999/Beitragsbescheide/beitragsbescheid">
+              <img src="fanstatic/ukhtheme.resources/images/beitragsbescheid.png" />
+      </a>
+    </td>
+    <td width="250" style="vertical-align: top;">
+      <a href="https://mitgliederportal.ukh.de/members/99999/Unfallgeschehen-meldung-betriebsfremder-mitarbeiter/unfallgeschehenmenu">
+        <img src="fanstatic/ukhtheme.resources/images/ihreunfaelle.png" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="250" style="vertical-align: top;">
+      <a href="https://mitgliederportal.ukh.de/members/99999/Bearbeitung-meine-daten/meinedaten">
+        <img src="fanstatic/ukhtheme.resources/images/ihre_daten.png" />
+      </a>
+    </td>
+    <td width="250" style="vertical-align: top;">
+      <a href="https://mitgliederportal.ukh.de/members/99999/Mitteilung-an-ukh/@@add">
+        <img src="fanstatic/ukhtheme.resources/images/ihre_nachricht.png" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="250" style="vertical-align: top;">
+      <a href="https://mitgliederportal.ukh.de/UKHUnfallanzeige">
+        <img src="fanstatic/ukhtheme.resources/images/uaz_al.png" />
+      </a>
+    </td>
+    <td width="250" style="vertical-align: top;">
+      <a href="https://mitgliederportal.ukh.de/members/99999/Bemessungsgrundlagen/@@add">
+        <img src="fanstatic/ukhtheme.resources/images/bemessungsgrundlage.png" />
+      </a>
+    </td>
+  </tr> 
+</table>
+-->

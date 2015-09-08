@@ -1,0 +1,114 @@
+<html>
+  <body>
+    <table id="startseite-table-noborder">
+      <!-- Ueberschrift und Portlet -->
+      <tr>
+        <td colspan=2>
+          <h1 i18n:translate="">Willkommen im Mitgliederportal der Unfallkasse Hessen</h1>
+            <!-- Sondereintrag Einladung ######################################################## 
+                <div class="bigportlet">
+                  <div class="bigportlet-header"></div>
+                  <h2>Einladung</h2>
+                  <div class = "bigportlet-body">
+                    <h1>zur Exklusivveranstaltung für Bürgermeisterinnen und Bürgermeister</h1>
+                    <h1>am 10. April 2014 von 9:30 bis ca. 15 Uhr in Frankfurt am Main</h1>
+                    <br>
+                    <h4>Seit nunmehr zwei Jahren gibt es bei der Unfallkasse Hessen einen individuellen Beratungsservice</h4>
+                    <h4>für hessische Bürgermeisterinnen und Bürgermeister. Im April 2014 bieten wir nun erstmals eine</h4>
+                    <h4>Exklusivveranstaltung für diesen Personenkreis an:</h4>
+                    <br>
+                    <h1>Wir laden Sie herzlich ein, am 10. April unser Gast auf der MS Palladium (KD-Linie, Abfahrt</h1>
+                    <h1>Frankfurt am Main, Eisener Steg) zu sein. Genießen Sie für ein paar Stunden das maritime</h1>
+                    <h1>Ambiente im Kreis Ihrer Kolleginnen und Kollegen mit Ideen und Antworten zu Ihren ganz</h1>
+                    <h1>speziellen Themen und einem abwechslungsreichen Rahmenprogramm.</h1>
+                    <h1>Anmeldung ab sofort per Mail an Kathrin Weis (k.weis@ukh.de).</h1>
+                    <br>
+                    <h4>Achtung: Das Kontingent ist begrenzt. Wir berücksichtigen die Anmeldungen nach Eingangsdatum.</h4>
+                  </div>
+                  <div class="bigportlet-footer"></div>
+                </div>
+             ################################################################################ -->
+          <!--
+          <p i18n:translate="">Testumgebung mit Testdatenbank !!!</p> 
+          -->
+          <p i18n:translate="">In unserem Portal stehen Ihnen verschiedene Services für den Datenaustausch mit der 
+                               Unfallkasse Hessen zur Verfügung.</p>
+          <h3 i18n:translate="">Bitte wählen Sie einen Bereich aus:</h3>
+        </td>
+        <td rowspan=6 id="portlets" style="vertical-align:top">
+                <!--Portlet 1 -->
+                <div class="portlet">
+                  <div class="portlet-header"></div>
+                  <h1>News der UKH</h1>
+                  <div class = "portlet-body">
+                    <a href="http://www.ukh.de/informationen/inform-das-magazin/" class="portletlink">
+                      <img src="fanstatic/ukhtheme.resources/magazininform.png" title="inform">
+                    <a href="http://www.ukh.de/informationen/sibe-reportarchiv/" class="portletlink">
+                      <img src="fanstatic/ukhtheme.resources/sibe-report.png" title="SiBe-Report">
+                    <a href="http://www.ukh.de/presse/pressemitteilungen/" class="portletlink">
+                      <img src="fanstatic/ukhtheme.resources/pressemeldungen.png" title="Pressemeldungen">
+                    <a href="http://www.kitaportal-hessen.de" class="portletlink">
+                      <img src="fanstatic/ukhtheme.resources/kitaportal.png" title="Kitaportal">
+                  </div>
+                  <div class="portlet-footer"></div>
+                </div>
+                <!--Portlet 2-->
+                <div class="portlet">
+                  <div class="portlet-header"></div>
+                  <h1>Immer aktuell...</h1>
+                  <div class = "portlet-body">
+                    <p>Abonnieren Sie unseren monatlichen Newsletter</p>
+                    <a href="http://www.ukh.de/informationen/newsletter-abonnieren/" class="portletlink">
+                      <img src="fanstatic/ukhtheme.resources/newsletter_abo.png" title="Newsletter-Abo">
+                    </a>
+                  </div>
+                  <div class="portlet-footer"></div>
+                </div>
+                <!--Portlet 3-->
+                <div class="portlet">
+                  <div class="portlet-header"></div>
+                  <h1>Downloads</h1>
+                  <div class = "portlet-body">
+                    <ul>
+                      <!--
+                      <li><a class="portletlink"
+                        href="http://www.ukh.de/downloads/unfallanzeige/">Unfallanzeige</a></li>
+                      -->
+                      <li><a class="portletlink"
+                             href="http://www.ukh.de/downloads/anmeldung-haushaltshilfe/">Anmeldung Haushaltshilfe</a></li>
+                      <li><a class="portletlink"
+                             href="http://www.ukh.de/downloads/taxi-gutscheine-fuer-schulen/">Taxi-Gutscheine für Schulen</a></li>
+                      <li><a class="portletlink"
+                             href="http://www.ukh.de/downloads/erste-hilfe-verfahren/">Erste-Hilfe-Verfahren</a></li>
+                      <li><a href="" tal:attributes="href python: view.application_url()+'/auftragehrenamt'">Muster Auftrag Ehrenamt</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="portlet-footer"></div>
+                </div>
+                <!--Portlet 4 TEST-->
+                <div class="portlet">
+                  <div class="portlet-header"></div>
+                  <h1>Informationen</h1>
+                  <div class = "portlet-body">
+                    <ul>
+                      <li><a class="portletlink" 
+                             href="http://www.dguv.de/landesverbaende/de/datenbanken/index.jsp">Durchgangsärzte (DGUV)</a></li>
+                    </ul>
+                  </div>
+                  <div class="portlet-footer"></div>
+                </div>
+        </td>
+      </tr> 
+      <tr tal:repeat="menus view/getMenus">
+        <td width="250" style="vertical-align: top;" tal:repeat="menu menus">
+           <a tal:attributes="href menu/action">
+              <img tal:attributes="src menu/icon"/>
+           </a>
+        </td>
+      </tr>
+
+      </table>
+  </body>
+</html>
+

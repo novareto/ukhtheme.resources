@@ -7,6 +7,7 @@ from js.jquery import jquery
 
 library = Library('ukhtheme.resources', 'static')
 
+table = Resource(library, 'table.css')
 jbs = Resource(library, 'jasny-bootstrap.js', depends=[jquery])
 cbs = Resource(library, 'jasny-bootstrap.css')
 
