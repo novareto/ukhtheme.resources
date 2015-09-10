@@ -30,6 +30,14 @@ body {
     padding: 0 !important;
 }
 
+#siteheader > .navigation,
+.navigation > nav > .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 #siteheader > .navigation > nav {
     height: 40px !important;
     min-height: 40px;
@@ -67,13 +75,11 @@ body {
     text-decoration: none;
 }
 
-#personalmenu {
-    background: rgba(0, 0, 0, 0) url("images/bg-infoline.png") repeat-x scroll left top;
-    border: 1px solid #adafb0;
-    color: #262626;
-    height: 32px;
-    margin: 0 auto;
-    width: 920px;
+#personalpreferencesviewlet {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
 }
 
 #header {
@@ -233,6 +239,10 @@ a img {
     text-decoration: none;
 }
 
+#globalmenuviewlet {
+    padding: 0;
+    margin: 0;
+}
 
 #globalmenu li ul {
   left: -999em;
@@ -258,7 +268,6 @@ a img {
 }
 
 #personalmenu ul {
-  margin-right: 1.5em;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -521,7 +530,7 @@ input, select {
 }
 
 #portlets {
-    padding-top: 2em;
+  padding-top: 2em;
   width: 215px;
 }
 
@@ -555,7 +564,7 @@ input, select {
   background-position: 0 0;
   background-repeat: no-repeat;
   color: #666666;
-  margin: 0 0 15px;
+  margin: 0 0 15px 50px;
   padding: 0 15px 15px;
   position: relative;
   width: 215px;
@@ -913,7 +922,7 @@ div#uvc-tabs ul {
     background: url("images/bg.png") no-repeat scroll right top rgba(0, 0, 0, 0);
     height: 170px;
     position: absolute;
-    margin-left: 940px;
+    margin-left: 913px;
     width: 41px;
     z-index: 99999;
 }
@@ -924,6 +933,7 @@ div#uvc-tabs ul {
 
 #page-content-wrapper {
     padding: 0 22px;
+    background-color: white !important;
 }
 
 #startseite-table-noborder {
