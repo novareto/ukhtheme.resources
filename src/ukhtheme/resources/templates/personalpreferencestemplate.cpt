@@ -1,5 +1,5 @@
-<div id="personalmenu" class="hidden-xs">
-  <ul tal:attributes="id viewlet.id">
+<div id="personalmenu" class="hidden-xs" tal:condition="viewlet.menus">
+  <ul tal:attributes="id getattr(viewlet, 'id', None) or viewlet.__class__.__name__.lower()">
     <li tal:repeat="menu viewlet.menus" tal:attributes="id menu.id">
       <a href="" tal:attributes="href menu.action" tal:content="menu.title"/>
       <ul tal:condition="menu.submenu">
