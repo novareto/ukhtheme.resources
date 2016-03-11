@@ -287,7 +287,6 @@ a img {
 
 #personalmenu li#username {
   position: absolute;
-  margin-right: 600px;
   color: #666;
 }
 
@@ -518,6 +517,7 @@ input, select {
   padding-top: 10px;
   margin: 0 0 0.2em 0;
   line-height: normal;
+  font-size: 18px;
 }
 
 .bigportlet h4 {
@@ -593,7 +593,7 @@ input, select {
 }
 
 #colophon {
-  color: white;
+  color: #666666;
   font-size: 90%;
   margin: 0.2em auto 2em auto;
   width: 964px;
@@ -630,7 +630,7 @@ input, select {
 }
 
 .dropdown {
-  margin: 1em 0 0 0;
+  margin: 0 0 0 0;
   line-height: 1em;
   float: right;
 }
@@ -922,7 +922,7 @@ div#uvc-tabs ul {
     background: url("images/bg.png") no-repeat scroll right top rgba(0, 0, 0, 0);
     height: 170px;
     position: absolute;
-    margin-left: 913px;
+    margin-left: 918px;
     width: 41px;
     z-index: 99999;
 }
@@ -969,4 +969,8 @@ div#wrapper {
 .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
     margin-left: 0px;
     position: absolute;
+}
+
+#field-form-field-rollen input[type="checkbox"] {
+    margin-left: -20px;
 }

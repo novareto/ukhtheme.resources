@@ -28,11 +28,11 @@
 
 	<tal:widget tal:content="structure widget.render()" />
 	
-	<p class="help-block" tal:condition="widget.description"
+	<span class="help-block" tal:condition="widget.description"
 	   tal:content="structure widget.description"
 	   tal:attributes="for widget.htmlId()" />
 	
-	<p class="help-block" tal:condition="widget.error"
+	<p class="help-block" id="error" tal:condition="widget.error"
 	   tal:content="widget.error.title"> Error </p>
       </div>
       <div class="form-group" tal:condition="view.actionWidgets">
