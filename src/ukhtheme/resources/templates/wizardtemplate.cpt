@@ -20,7 +20,6 @@
 	  <span tal:condition="widget.required">*</span>
 	</label>
 	<p class="help-block" tal:condition="widget.description" tal:content="widget.description" tal:attributes="for widget.htmlId()" />
-	
 	<tal:widget tal:content="structure widget.render()" />
 	
 	<p id="error" class="help-block" tal:condition="widget.error" tal:content="widget.error.title" />

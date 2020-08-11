@@ -19,8 +19,8 @@
       <legend tal:content="getattr(view, 'legend', None)" />
       <div tal:repeat="widget view.fieldWidgets"
 	   tal:attributes="id 'field-' + widget.htmlId(); class widget.error and 'form-group alert-danger has-error' or 'form-group'">
-
 	<label for="#" class="control-label"
+         tal:condition="widget.isVisible()"
 	       tal:attributes="for widget.htmlId()">
           <span tal:content="widget.title"> </span>
           <span tal:condition="widget.required"> * </span> 
@@ -28,7 +28,7 @@
 
 	<tal:widget tal:content="structure widget.render()" />
 	
-	<span class="help-block" tal:condition="widget.description"
+	<span class="help-block" tal:condition="widget.description and widget.isVisible()"
 	   tal:content="structure widget.description"
 	   tal:attributes="for widget.htmlId()" />
 	
